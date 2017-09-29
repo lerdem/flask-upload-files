@@ -1,0 +1,17 @@
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Все загруженые фото</h2>
+<a href=" {{ url_for('index') }}"> Главная </a>
+
+
+{% for file in file_data[::-1] %}
+<div>
+<img src="{{ url_for('static', filename=file.name) }}" alt="{{ file.name }}" style="width:450px;height:450px;">
+</div>
+{% endfor %}
+
+</body>
+</html> 
+	

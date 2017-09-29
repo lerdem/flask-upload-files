@@ -1,4 +1,5 @@
-<h1> Тестируем загрузку файлов от юзера с запиьсю в базу данных </h1>
+<h1> Этап 1: тестируем загрузку файлов от юзера с запиьсю в базу данных
+Этап 2: тестируем загрузку файлов в папку static и выгрузкой на фронт p.s. проверки на загрузку форматов нет </h1>
 <h2> Загрузка файла </h2>
 <form method="POST" action={{ url_for('upload') }} enctype="multipart/form-data">
 <div>
@@ -8,7 +9,10 @@
 <button type="submit">Загрузить</button>
 </form>
 
+<a href=" {{ url_for('show_all') }}"> Смотреть все загруженые фото </a>
 
-<h3> Урок взят с 
-<a href="https://www.youtube.com/watch?v=TLgVEBuQURA&t=246s"> ссылочка на видео </a>
+
+<h3> При помощи уроков из
+<li><a href="https://www.youtube.com/watch?v=TLgVEBuQURA&t=246s"> ссылочка на видео 1 </a></li>
+<li><a href="https://www.youtube.com/watch?v=Y2fMCxLz6wM"> ссылочка на видео 2</a></li>
 </h3>
